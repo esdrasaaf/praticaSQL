@@ -1,0 +1,1 @@
+SELECT t.id, tab1.name AS writer, tab2.name AS recipient, t.message FROM testimonials AS t LEFT JOIN users tab1 ON t."writerId" = tab1.id LEFT JOIN users tab2 ON t."recipientId" = tab2.id;

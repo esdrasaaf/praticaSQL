@@ -1,0 +1,1 @@
+SELECT u.id, u.name, roles.name AS role, companies.name AS company, experiences."startDate" FROM users AS u JOIN experiences ON experiences."userId" = u.id JOIN roles ON roles.id = experiences."roleId" JOIN companies ON companies.id = experiences."companyId" AND experiences."endDate" IS NULL WHERE u.id = 50;
