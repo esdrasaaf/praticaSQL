@@ -1,0 +1,1 @@
+SELECT users.id AS id, COUNT(educations.*) AS educations FROM users JOIN educations ON educations."userId" = users.id GROUP BY users.id ORDER BY educations DESC;
